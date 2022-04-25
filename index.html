@@ -562,7 +562,8 @@
 
     <script>
         $(document).ready(function() {
-            let ano = Date.getYear();
+            const d = new Date();
+            let ano = d.getFullYear();
             let idade = ano - 1999;
             let profissional = ano - 2019;
 
