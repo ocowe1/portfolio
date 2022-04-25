@@ -79,13 +79,11 @@
                     <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                         <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                             <li class=" smooth-menu active"></li>
-                            <li class=" smooth-menu"><a href="#education">education</a></li>
+                            <li class=" smooth-menu"><a href="#education">Educação</a></li>
                             <li class="smooth-menu"><a href="#skills">skills</a></li>
-                            <li class="smooth-menu"><a href="#experience">experience</a></li>
-                            <li class="smooth-menu"><a href="#profiles">profile</a></li>
-                            <li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
-                            <li class="smooth-menu"><a href="#clients">clients</a></li>
-                            <li class="smooth-menu"><a href="#contact">contact</a></li>
+                            <li class="smooth-menu"><a href="#experience">experiência</a></li>
+                            <li class="smooth-menu"><a href="#profiles">perfil</a></li>
+                            <li class="smooth-menu"><a href="#contact">contato</a></li>
                         </ul>
                         <!--/.nav -->
                     </div>
@@ -110,7 +108,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="header-text">
-                        <h2>hi <span>,</span> Olá, eu <br> sou o <br> ocowe<span>.</span> </h2>
+                        <h2>Olá <span>,</span> eu sou<br> o <br> ocowe<span>.</span> </h2>
                         <p>DESENVOLVEDOR WEB</p>
                         <a href="assets/download/Curriculum.pdf" download>Baixar Curriculum</a>
                     </div>
@@ -137,7 +135,7 @@
                     <div class="col-sm-6">
                         <div class="single-about-txt">
                             <h3 id="sobre-script">
-                                
+
                             </h3>
                             <p>
                                 Iniciei minha vida profissional com desenvolvimento web com a linguagem de PHP, até então sem saber nada sobre a linguagem, aprendi todo o necessário sozinho em 3 meses, o básico da linguagem, em 6 meses eu já estava no meu primeiro framework, o Codeigniter
@@ -193,7 +191,7 @@
                                     <!-- / li -->
                                     <li>
                                         <a href="https://github.com/ocowe1">
-                                            <i class="flaticon-github-logo" aria-hidden="true"></i>
+                                            <i class="fa fa-github" aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <!-- / li -->
@@ -434,13 +432,13 @@
     <!--contact start -->
     <section id="contact" class="contact">
         <div class="section-heading text-center">
-            <h2>contact me</h2>
+            <h2>Contato</h2>
         </div>
         <div class="container">
             <div class="contact-content">
                 <div class="row">
 
-                    <div class="col-md-offset-1 col-md-5 col-sm-6">
+                    <div class="col-md-offset-1 ">
                         <div class="single-contact-box">
                             <div class="contact-adress">
                                 <div class="contact-add-head">
@@ -570,12 +568,14 @@
     <script src="assets/js/custom.js"></script>
 
     <script>
-        let ano = getFullYear();
-        let nascimento = 1999;
-        let idade = ano - nascimento;
-        let profissional = ano - 2019;
+        $(document).ready(function() {
+            let ano = getFullYear();
+            let nascimento = 1999;
+            let idade = ano - nascimento;
+            let profissional = ano - 2019;
 
-        $("#sobre-script").html("Tenho "+idade+" anos e trabalho com desenvolvimento web há "+profissional+" anos.")
+            $("#sobre-script").html("Tenho " + idade + " anos e trabalho com desenvolvimento web há " + profissional + " anos.")
+        });
     </script>
 
 </body>
