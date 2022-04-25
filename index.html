@@ -82,7 +82,6 @@
                             <li class=" smooth-menu"><a href="#education">Educação</a></li>
                             <li class="smooth-menu"><a href="#skills">skills</a></li>
                             <li class="smooth-menu"><a href="#experience">experiência</a></li>
-                            <li class="smooth-menu"><a href="#profiles">perfil</a></li>
                             <li class="smooth-menu"><a href="#contact">contato</a></li>
                         </ul>
                         <!--/.nav -->
@@ -108,7 +107,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="header-text">
-                        <h2>Olá <span>,</span> eu sou<br> o <br> ocowe<span>.</span> </h2>
+                        <h2>Olá <span>,</span> eu sou o <br> ocowe<span>.</span> </h2>
                         <p>DESENVOLVEDOR WEB</p>
                         <a href="assets/download/Curriculum.pdf" download>Baixar Curriculum</a>
                     </div>
@@ -153,12 +152,6 @@
                                     <div class="single-about-add-info">
                                         <h3>email</h3>
                                         <p>viniciusath@hotmail.com</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="single-about-add-info">
-                                        <h3>Site</h3>
-                                        <p>ocowe.dev</p>
                                     </div>
                                 </div>
                             </div>
@@ -574,7 +567,7 @@
             let idade = ano - nascimento;
             let profissional = ano - 2019;
 
-            $("#sobre-script").html("Tenho " + idade + " anos e trabalho com desenvolvimento web há " + profissional + " anos.")
+            document.getElementById("sobre-script").html("Tenho " + idade + " anos e trabalho com desenvolvimento web há " + profissional + " anos. Ocowe foi um nickname criado por mim para redes sociais e jogos que acabou sendo aderido no meu trabalho e entre amigos como um apelido no geral.")
         });
     </script>
 
