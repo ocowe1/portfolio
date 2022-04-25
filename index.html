@@ -136,12 +136,13 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="single-about-txt">
-                            <h3>
-                                Tenho <?php echo date('Y') - 1999; ?> anos e trabalho com desenvolvimento web há <?php echo date("Y") - 2019; ?> anos.
+                            <h3 id="sobre-script">
+                                
                             </h3>
                             <p>
-                                Iniciei minha vida profissional com desenvolvimento web com a linguagem de PHP, até então sem saber nada sobre a linguagem, aprendi todo o necessário sozinho em 3 meses, o básico da linguagem, em 6 meses eu já estava no meu primeiro framework, o Codeigniter e 2 meses mais tarde no Laravel.
-                                Atualmente tenho esse conhecimento sólido em PHP, utilizando bootstrap como framework front-end, utilizando css e javascript para criar telas dinâmicas. Procuro sempre estudar outras linguagens como o React, NodeJS e Python. Atualmente procurando estudar linguagens Mobile.
+                                Iniciei minha vida profissional com desenvolvimento web com a linguagem de PHP, até então sem saber nada sobre a linguagem, aprendi todo o necessário sozinho em 3 meses, o básico da linguagem, em 6 meses eu já estava no meu primeiro framework, o Codeigniter
+                                e 2 meses mais tarde no Laravel. Atualmente tenho esse conhecimento sólido em PHP, utilizando bootstrap como framework front-end, utilizando css e javascript para criar telas dinâmicas. Procuro sempre estudar outras linguagens
+                                como o React, NodeJS e Python. Atualmente procurando estudar linguagens Mobile.
                             </p>
                             <div class="row">
                                 <div class="col-sm-4">
@@ -247,9 +248,9 @@
                             <!--/.timeline-->
                         </div>
                     </div>
-                  
+
+                </div>
             </div>
-        </div>
 
     </section>
     <!--/.education-->
@@ -265,8 +266,8 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="single-skill-content">
-                            
-                        <div class="barWrapper">
+
+                            <div class="barWrapper">
                                 <span class="progressText">laravel 8</span>
                                 <div class="single-progress-txt">
                                     <div class="progress ">
@@ -278,7 +279,7 @@
                                 </div>
                             </div>
 
-                        <div class="barWrapper">
+                            <div class="barWrapper">
                                 <span class="progressText">codeigniter 3</span>
                                 <div class="single-progress-txt">
                                     <div class="progress ">
@@ -394,20 +395,13 @@
                                                 </h4>
                                                 <h5>Santos, SP</h5>
                                                 <p class="description">
-                                                    
-                                                - Desenvolver aplicações web no backend utilizando PHP, framework da própria empresa utilizando o MVC.<br>
-                                                - Desenvolver aplicações web no frontend utilizando CSS, HTML, Bootstrap, JavaScript.<br>
-                                                - Uso do banco de dados MySQL.<br>
-                                                - Uso de frameworks como CodeIgniter e Laravel.<br>
-                                                - Utilização das ferramentas GIT e Docker.<br>
-                                                - Responsável pelo desenvolvimento da geração de relatórios nas extensões pdf e xlsx para o sistema acadêmico (financeiro, turmas, matriculas).<br>
-                                                - Desenvolvimento de questionários para a CPA (comissão própria de avaliação) da instituição.<br>
-                                                - Análise e entendimento de demandas.<br>
-                                                - Levantamento de necessidades junto aos usuários, testes e documentação.<br>
-                                                - Analisar o desempenho de sistemas implantados e solucionar problemas técnicos.<br>
-                                                - Atender aos usuários nas questões ligadas aos sistemas.<br>
-                                                - Elaborar tutoriais e materiais de apoio para suporte técnico acadêmico.<br>
-                                                - Responsável do setor de TI da instituição no sistema CAPES para disponibilização de periódicos.
+
+                                                    - Desenvolver aplicações web no backend utilizando PHP, framework da própria empresa utilizando o MVC.<br> - Desenvolver aplicações web no frontend utilizando CSS, HTML, Bootstrap, JavaScript.<br> -
+                                                    Uso do banco de dados MySQL.<br> - Uso de frameworks como CodeIgniter e Laravel.<br> - Utilização das ferramentas GIT e Docker.<br> - Responsável pelo desenvolvimento da geração de relatórios nas extensões
+                                                    pdf e xlsx para o sistema acadêmico (financeiro, turmas, matriculas).<br> - Desenvolvimento de questionários para a CPA (comissão própria de avaliação) da instituição.<br> - Análise e entendimento de
+                                                    demandas.
+                                                    <br> - Levantamento de necessidades junto aos usuários, testes e documentação.<br> - Analisar o desempenho de sistemas implantados e solucionar problemas técnicos.<br> - Atender aos usuários nas questões
+                                                    ligadas aos sistemas.<br> - Elaborar tutoriais e materiais de apoio para suporte técnico acadêmico.<br> - Responsável do setor de TI da instituição no sistema CAPES para disponibilização de periódicos.
 
                                                 </p>
                                             </div>
@@ -421,7 +415,7 @@
                             <!--/.single-timeline-box-->
                         </li>
 
-                        
+
 
                     </ul>
                 </div>
@@ -434,7 +428,7 @@
     <!--/.experience-->
     <!--experience end -->
 
->
+    >
     <!--clients end -->
 
     <!--contact start -->
@@ -445,7 +439,7 @@
         <div class="container">
             <div class="contact-content">
                 <div class="row">
-                    
+
                     <div class="col-md-offset-1 col-md-5 col-sm-6">
                         <div class="single-contact-box">
                             <div class="contact-adress">
@@ -471,7 +465,7 @@
                             <!--/.contact-adress-->
                             <div class="hm-foot-icon">
                                 <ul>
-                                <li>
+                                    <li>
                                         <a href="https://www.twitter.com/whynotocowe">
                                             <i class="fa fa-twitter" aria-hidden="true"></i>
                                         </a>
@@ -574,6 +568,15 @@
 
     <!--Custom JS-->
     <script src="assets/js/custom.js"></script>
+
+    <script>
+        let ano = getFullYear();
+        let nascimento = 1999;
+        let idade = ano - nascimento;
+        let profissional = ano - 2019;
+
+        $("#sobre-script").html("Tenho "+idade+" anos e trabalho com desenvolvimento web há "+profissional+" anos.")
+    </script>
 
 </body>
 
