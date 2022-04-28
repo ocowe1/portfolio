@@ -114,7 +114,9 @@
                     <h1 class="arrow">Um pouco <span>sobre</span> mim</h1>
                     <!-- Headline -->
                     <!-- about / welcome text -->
+
                     <p id="sobre-script"></p>
+
                     <p>Iniciei minha vida profissional com desenvolvimento web com a linguagem de PHP, até então sem saber nada sobre a linguagem, aprendi todo o necessário sozinho em 3 meses, o básico da linguagem, em 6 meses eu já estava no meu primeiro
                         framework, o Codeigniter e 2 meses mais tarde no Laravel. Atualmente tenho esse conhecimento sólido em PHP, utilizando bootstrap como framework front-end, utilizando css e javascript para criar telas dinâmicas. Procuro sempre estudar
                         outras linguagens como o React, NodeJS e Python. Atualmente procurando estudar linguagens Mobile.</p>
@@ -376,7 +378,7 @@
             let ano = d.getFullYear();
             let idade = ano - 1999;
             let profissional = ano - 2019;
-            $("#ano").html(ano).
+            $("#ano").html(ano);
             $("#sobre-script").html("Olá, me chamo Vinicius Costa Santos, tenho " + idade + " anos e trabalho com desenvolvimento web há " + profissional + " anos. Ocowe foi um nickname criado por mim para redes sociais e jogos que acabou sendo aderido no meu trabalho e entre amigos como um apelido no geral.")
         });
     </script>
